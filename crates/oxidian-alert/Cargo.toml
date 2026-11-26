@@ -1,0 +1,25 @@
+[package]
+name = "oxidian-alert"
+description = "Slack- and Discord-compatible webhook notifier."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+oxidian-core = { path = "../oxidian-core" }
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true

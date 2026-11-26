@@ -1,0 +1,18 @@
+{
+  "advisories": [
+    {
+      "cve_id": "CVE-2099-9001",
+      "product": "fixture",
+      "cvss": 9.8,
+      "summary": "Synthetic catalog row used to show the advisory file shape.",
+      "ranges": [
+        {
+          "start": "1.0.0",
+          "start_inclusive": true,
+          "end": "2.0.0",
+          "end_inclusive": false
+        }
+      ]
+    }
+  ]
+}

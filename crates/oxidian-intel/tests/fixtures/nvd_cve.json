@@ -1,0 +1,82 @@
+{
+  "resultsPerPage": 2,
+  "startIndex": 0,
+  "totalResults": 2,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2099-9001",
+        "descriptions": [
+          {"lang": "en", "value": "Synthetic fixture record."},
+          {"lang": "es", "value": "Registro sintetico."}
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            {
+              "source": "fixture",
+              "type": "Primary",
+              "cvssData": {
+                "version": "3.1",
+                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "baseScore": 9.8,
+                "baseSeverity": "CRITICAL"
+              }
+            }
+          ]
+        },
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "operator": "OR",
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:example:fixture:*:*:*:*:*:*:*:*",
+                    "versionStartIncluding": "1.0.0",
+                    "versionEndExcluding": "2.0.0"
+                  },
+                  {
+                    "vulnerable": false,
+                    "criteria": "cpe:2.3:a:example:fixture:9.9.9:*:*:*:*:*:*:*"
+                  },
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:example:fixture:*:*:*:*:*:*:*:*"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2099-9004",
+        "descriptions": [
+          {"lang": "en", "value": "Unbounded fixture that must be ignored."}
+        ],
+        "metrics": {},
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "negate": false,
+                "cpeMatch": [
+                  {
+                    "vulnerable": true,
+                    "criteria": "cpe:2.3:a:example:fixture:*:*:*:*:*:*:*:*"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
