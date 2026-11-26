@@ -1,0 +1,28 @@
+{
+  "title": "fixture",
+  "catalogVersion": "2099.01.01",
+  "dateReleased": "2099-01-01T00:00:00.0000Z",
+  "count": 2,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2099-9001",
+      "vendorProject": "Example",
+      "product": "Fixture",
+      "vulnerabilityName": "Fixture vulnerability",
+      "dateAdded": "2099-01-01",
+      "shortDescription": "Synthetic record for parser tests.",
+      "requiredAction": "Apply updates.",
+      "dueDate": "2099-02-01"
+    },
+    {
+      "cveID": "not-a-cve",
+      "vendorProject": "Example",
+      "product": "Skipped",
+      "vulnerabilityName": "Skipped",
+      "dateAdded": "2099-01-01",
+      "shortDescription": "Invalid identifier.",
+      "requiredAction": "None.",
+      "dueDate": "2099-02-01"
+    }
+  ]
+}

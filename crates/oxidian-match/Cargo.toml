@@ -1,0 +1,21 @@
+[package]
+name = "oxidian-match"
+description = "Match services to CVEs when product and a bounded version range agree."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+oxidian-core = { path = "../oxidian-core" }
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true

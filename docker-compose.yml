@@ -1,0 +1,16 @@
+# Local development database only. The password is a placeholder for a
+# laptop Postgres and must be replaced before any shared deployment.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: oxidian
+      POSTGRES_PASSWORD: oxidian-dev-only
+      POSTGRES_DB: oxidian
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - oxidian-pg:/var/lib/postgresql/data
+
+volumes:
+  oxidian-pg:

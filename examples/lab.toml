@@ -1,0 +1,23 @@
+# Documentation names only. example.com is reserved (RFC 2606) and
+# 192.0.2.0/24 is TEST-NET-1 (RFC 5737). Replace both before use.
+
+[project]
+name = "lab"
+
+[allowlist]
+domains = ["example.com"]
+cidrs = ["192.0.2.0/24"]
+
+[discovery]
+max_names = 200
+
+[scan]
+ports = "22,80,443,8080,8443"
+timeout_secs = 300
+
+[intel]
+cache_dir = ".oxidian/cache"
+epss_limit = 100
+
+[api]
+bind = "127.0.0.1:8080"

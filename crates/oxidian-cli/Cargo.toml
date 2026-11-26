@@ -1,0 +1,33 @@
+[package]
+name = "oxidian"
+description = "Allowlist-only attack-surface mapper."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "oxidian"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+oxidian-alert = { path = "../oxidian-alert" }
+oxidian-api = { path = "../oxidian-api" }
+oxidian-core = { path = "../oxidian-core" }
+oxidian-discovery = { path = "../oxidian-discovery" }
+oxidian-intel = { path = "../oxidian-intel" }
+oxidian-match = { path = "../oxidian-match" }
+oxidian-scan = { path = "../oxidian-scan" }
+oxidian-store = { path = "../oxidian-store" }
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
